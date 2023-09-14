@@ -205,31 +205,32 @@ header .menu nav .home-color {
 #browse .textbox h1 {
   font-weight: 700;
   font-size: 60px;
-  color: #3cc1d8;
+  color: #47b2bc;
 }
 #browse .textbox h4 {
   font-size: 20px;
-  color: #6c7480;
+  color: #878787;
   margin: 20px 0;
   line-height: 1.2;
 }
 #browse .textbox h4 span {
-  color: #3cc1d8;
-  text-decoration: underline;
+  color: #47b2bc;
+  text-decoration-line: underline;
 }
 #browse .btn {
   font-size: 18px;
-  border: 0.5px solid #bdbdbd;
+  border: 0.5px solid #9c9999;
   padding: 15px 46px;
   margin: 0 20px;
   border-radius: 5px;
 }
 #browse .bgc {
-  background: #3cc1d8;
+  background-color: #47b2bc;
   color: white;
 }
 #browse .box {
   padding: 30px;
+  border-radius: 10px;
 }
 #browse .box .imgbox {
   width: 150px;
@@ -240,31 +241,35 @@ header .menu nav .home-color {
   width: auto;
   margin-left: 20px;
 }
+#browse .box .textbox .minibox {
+  margin-right: 10px;
+  align-items: center;
+}
 #browse .box .textbox .minibox h2 {
   font-size: 22px;
   font-weight: 700;
 }
 #browse .box .textbox .minibox h5 {
-  color: #3cc1d8;
+  color: #47b2bc;
   font-size: 18px;
 }
 #browse .box .textbox p {
   margin: 15px 0;
   font-size: 18px;
   line-height: 1.2;
-  color: rgba(35, 47, 66, 0.5215686275);
+  color: rgba(30, 30, 72, 0.4392156863);
 }
 #browse .box .textbox .add {
   display: flex;
 }
 #browse .box .textbox .add input {
-  border: 1px solid #e1e1e1;
-  background-color: #e9e9e9;
+  border: 1px solid #cdcccc;
+  background-color: #eeeeee;
   width: 50px;
 }
 #browse .box .textbox .add .btn {
-  background-color: #3cc1d8;
-  color: #fff;
+  background-color: #47b2bc;
+  color: white;
   padding: 7px 20px;
 }
 #browse .big {
@@ -272,20 +277,37 @@ header .menu nav .home-color {
   margin-top: 50px;
 }
 @media screen and (max-width: 992px) {
-  #browse {
-    text-align: center;
+  #browse .box {
+    padding: 30px 0;
   }
-  #browse .col-md-12 {
-    flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  #browse .textbox {
+    width: 500px;
   }
-  #browse .col-md-12 .textbox {
-    width: 100%;
+}
+@media screen and (max-width: 576px) {
+  #browse .textbox {
+    width: auto;
   }
-  #browse .col-md-12 .textbox h1 {
-    font-size: 40px;
+  #browse .textbox h1 {
+    font-size: 50px;
   }
-  #browse .col-md-12 .textbox h4 {
-    font-size: 14px;
+  #browse .textbox h4 {
+    font-size: 18px;
+  }
+  #browse .btn {
+    margin: 0 10px;
+    padding: 10px 20px;
+  }
+  #browse .box {
+    padding: 30px 0;
+  }
+  #browse .box .imgbox {
+    width: 130px;
+  }
+  #browse .box .textbox .add .btn {
+    padding: 7px 10px;
   }
 }
 
