@@ -1,11 +1,39 @@
 header
     padding: 20px 0
-    .imgbox
-        width: 40px
-    nav
-        a
-            font-size: 20px
-            color: #6d6d6d
-            margin-right: 10px
-        .home-color
-            color: #74bebc
+    .menu
+        .imgbox
+            width: 40px
+        .btn
+            display: none
+            padding: 0 10px
+            color: #ffff
+            background-color: #4ab4be
+            cursor: pointer
+            h5
+                font-size: 20px
+                margin-right: 3px
+                cursor: pointer
+        nav
+            a
+                font-size: 20px
+                color: #595959
+                margin-right: 30px
+            .home-color
+                color: #47b2bc
+
+    @media screen and ( max-width: 768px  )
+        .menu
+            .btn
+                display: flex
+                align-items: center
+            nav
+                display: none
+
+    @media screen and ( max-width: 576px )
+        .menu
+            .imgbox
+                margin-right: 10px
+            nav
+                display: none
+                a
+                    margin-right: 10px

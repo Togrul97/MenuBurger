@@ -17,16 +17,48 @@ section {
 header {
   padding: 20px 0;
 }
-header .imgbox {
+header .menu .imgbox {
   width: 40px;
 }
-header nav a {
-  font-size: 20px;
-  color: #6d6d6d;
-  margin-right: 10px;
+header .menu .btn {
+  display: none;
+  padding: 0 10px;
+  color: white;
+  background-color: #4ab4be;
+  cursor: pointer;
 }
-header nav .home-color {
-  color: #74bebc;
+header .menu .btn h5 {
+  font-size: 20px;
+  margin-right: 3px;
+  cursor: pointer;
+}
+header .menu nav a {
+  font-size: 20px;
+  color: #595959;
+  margin-right: 30px;
+}
+header .menu nav .home-color {
+  color: #47b2bc;
+}
+@media screen and (max-width: 768px) {
+  header .menu .btn {
+    display: flex;
+    align-items: center;
+  }
+  header .menu nav {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  header .menu .imgbox {
+    margin-right: 10px;
+  }
+  header .menu nav {
+    display: none;
+  }
+  header .menu nav a {
+    margin-right: 10px;
+  }
 }
 
 #beautiful {
@@ -240,31 +272,20 @@ header nav .home-color {
   margin-top: 50px;
 }
 @media screen and (max-width: 992px) {
-  #browse .box .imgbox {
-    width: 220px;
+  #browse {
+    text-align: center;
   }
-  #browse .box .textbox .add .btn {
-    padding: 8px 10px;
+  #browse .col-md-12 {
+    flex-direction: column;
   }
-  #browse .box .textbox .add .btn h3 {
-    font-size: 14px;
+  #browse .col-md-12 .textbox {
+    width: 100%;
   }
-}
-@media screen and (max-width: 768px) {
-  #browse .textbox h1 {
+  #browse .col-md-12 .textbox h1 {
     font-size: 40px;
   }
-  #browse .btn {
-    padding: 10px 25px;
-    margin: 0 8px;
-  }
-  #browse .box .imgbox {
-    width: 150px;
-  }
-}
-@media screen and (max-width: 576px) {
-  #browse .btn {
-    padding: 5px 15px;
+  #browse .col-md-12 .textbox h4 {
+    font-size: 14px;
   }
 }
 
